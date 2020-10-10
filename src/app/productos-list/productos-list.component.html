@@ -1,0 +1,21 @@
+<h1>Lista de productos</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let producto of productos" [ngClass]="{'clearance': producto.clearance}">
+            <td><img [src]="producto.image" [alt]="producto.name"></td>
+            <td>{{producto.name | uppercase}}</td>
+            <td>{{producto.description}}</td>
+            <td>{{producto.price | currency}}</td>
+            <td><span class="badge badge-warning" *ngIf="producto.stock == 0">SIN STOCK</span></td>            
+        </tr>
+    </tbody>
+</table>

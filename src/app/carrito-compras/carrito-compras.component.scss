@@ -1,0 +1,35 @@
+.img{
+    width: 100%;
+}
+h1{
+    color: grey;
+}
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color:darkolivegreen;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: olivedrab;
+	color: white;
+}
+
+.tick{
+    width: 20px;
+}

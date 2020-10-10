@@ -1,4 +1,64 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="Home">EL AZULEÑO</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="Pedidos">Pedidos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="Productos">Productos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="showFaq">FAQ</a>
+          </li>
+      </ul>
+  </div>
+  </nav>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <app-productos-list></app-productos-list>
+    </div>
+    <div class="col-4">
+        <app-carrito-compras></app-carrito-compras>
+    </div>
+  </div>
+</div>
+<footer class="page-footer font-small blue pt-4">
+  <div class="container-fluid text-center text-md-left">
+      <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+              <h5 class="text-uppercase">EL AZULEÑO</h5>
+              <p>Sitio realizado por Diego Vásquez y Juan Mauro.</p>
+              <p>Web 2 - Cursada 2020 - TUDAI </p>
+              <p>Facultad de Ciencias Exactas - UNCPBA</p>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <div class="col-md-3 mb-md-0 mb-3">
+              <h5 class="text-uppercase">SECCIONES</h5>
+              <ul class="list-unstyled">
+              <li><a href="showHome">Home</a></li>
+              <li><a href="Pedidos">Pedidos</a></li>
+              <li><a href="Productos">Productos</a></li>
+              <li><a href="showFaq">FAQ</a></li>          
+              </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">REDES SOCIALES</h5>
+              <ul class="list-unstyled">
+                  <li> <a href="http://www.twitter.com/elazuleniocomidas"><img src="images/logotwitter.png" class="logosredes"> Twitter </a></li>
+                  <li> <a href="http://www.instagram.com/elazuleniocomidas"><img src="images/logoinstagram.png" class="logosredes"> Instagram </a></li>
+                  <li> <a href="http://www.Facebook.com/elazuleniocomidas"><img src="images/logofacebook.png" class="logosredes"> Facebook </a></li>
+                  <li> <a href="http://www.Youtube.com/elazuleniocomidas"><img src="images/logoyoutube.png" class="logosredes"> Youtube </a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
