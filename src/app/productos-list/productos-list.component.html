@@ -17,7 +17,7 @@
             <td>{{producto.price | currency}}<span class="badge badge-warning" *ngIf="producto.stock == 0">SIN STOCK</span></td>
             <td class="quantity">
                 <button class="btn btn-dark btn-sm" (click)="downQuantity(producto)">-</button>
-                {{producto.quantity}}
+                <input type="text" [(ngModel)]="producto.quantity" (keyup)="onChangeQuantity ($event, producto)">
                 <button class="btn btn-dark btn-sm" (click)="upQuantity(producto)">+</button>
             </td>         
         </tr>

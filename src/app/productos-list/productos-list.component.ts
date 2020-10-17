@@ -16,7 +16,7 @@ export class ProductosListComponent implements OnInit {
             stock: 5,
             image: 'assets/img/pizza.jpeg',
             clearance: false,
-            quantity: 0,
+            quantity: 5,
           },
           {
             name: 'Don Cripriano',
@@ -51,6 +51,9 @@ export class ProductosListComponent implements OnInit {
   downQuantity(producto: Producto): void{
     if(producto.quantity > 0)
       producto.quantity--;
+  }
+  onChangeQuantity(event, producto:Producto) : void{
+    console.log(event.target);
   }
 
 }
