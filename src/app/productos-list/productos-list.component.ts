@@ -22,7 +22,7 @@ export class ProductosListComponent implements OnInit {
             name: 'Don Cripriano',
             description: 'Panceta, queso y cebolla',
             price: 450,
-            stock: 5,
+            stock: 20,
             image: 'assets/img/empanada.jpg',
             clearance: true,
             quantity:0,
@@ -44,16 +44,22 @@ export class ProductosListComponent implements OnInit {
   }
   //Aumentar cantidad de un producto
   upQuantity(producto: Producto): void{
-    if(producto.quantity < producto.stock)
-      producto.quantity++;
+    if (producto.quantity < producto.stock)
+      producto.quantity++;     
   }
   //Disminuir cantidad de un producto
   downQuantity(producto: Producto): void{
     if(producto.quantity > 0)
       producto.quantity--;
   }
-  onChangeQuantity(event, producto:Producto) : void{
-    console.log(event.target);
+  changeQuantity({ event, producto }: { event; producto: Producto; }) : void{
+    if (event.target.value > producto.stock){
+      producto.quantity = producto.stock;
+    }
+    if (event.target.value < 0){
+      event.target.value = event.target.value*(-1);
+      producto.quantity = event.target.value;
+    } 
   }
 
 }

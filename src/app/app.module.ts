@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { ProductosListComponent } from './productos-list/productos-list.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
 import { FormsModule} from '@angular/forms';
+import { DeliveryContactComponent } from './delivery-contact/delivery-contact.component';
+import { DeliveryProductosComponent } from './delivery-productos/delivery-productos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductosListComponent,
-    CarritoComprasComponent
+    CarritoComprasComponent,
+    DeliveryContactComponent,
+    DeliveryProductosComponent
   ],
   imports: [
     BrowserModule,

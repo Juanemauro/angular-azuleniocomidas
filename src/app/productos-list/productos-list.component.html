@@ -16,9 +16,17 @@
             <td>{{producto.description}}</td>
             <td>{{producto.price | currency}}<span class="badge badge-warning" *ngIf="producto.stock == 0">SIN STOCK</span></td>
             <td class="quantity">
-                <button class="btn btn-dark btn-sm" (click)="downQuantity(producto)">-</button>
-                <input type="text" [(ngModel)]="producto.quantity" (keyup)="onChangeQuantity ($event, producto)">
-                <button class="btn btn-dark btn-sm" (click)="upQuantity(producto)">+</button>
+                <div class="input-group" *ngIf="producto.stock">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-dark btn-sm" (click)="downQuantity(producto)">-</button>
+                        </div>
+                        <input type="number" class="text-center" [(ngModel)]="producto.quantity" (keyup)="changeQuantity($event, producto)">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark btn-sm" (click)="upQuantity(producto)">+</button>
+                        </div>
+                    </div>
+                </div>
             </td>         
         </tr>
     </tbody>
