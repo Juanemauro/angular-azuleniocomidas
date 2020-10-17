@@ -1,5 +1,5 @@
-.img{
-    width: 90%;
+.img-thumbnail{
+    width: 200;
 }
 h1{
     color: grey;
@@ -11,9 +11,12 @@ table{
 	width: 100%;
 }
 
-th, td{
-	padding: 20px;
+.quantity{
+	width: 150px;
 }
+/*th, td{
+	padding: 5px;
+}*/
 
 thead{
 	background-color: #246355;

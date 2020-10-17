@@ -5,6 +5,7 @@ export interface Producto{
     stock: number;
     clearance: boolean;
     image: string;
+    quantity: number;
 }
 
 
