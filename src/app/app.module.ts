@@ -8,6 +8,9 @@ import { CarritoComprasComponent } from './carrito-compras/carrito-compras.compo
 import { FormsModule} from '@angular/forms';
 import { DeliveryContactComponent } from './delivery-contact/delivery-contact.component';
 import { DeliveryProductosComponent } from './delivery-productos/delivery-productos.component';
+import { DeliveryAboutComponent } from './delivery-about/delivery-about.component';
+import { DeliveryAzulenioComponent } from './delivery-azulenio/delivery-azulenio.component';
+import { DeliveryFaqComponent } from './delivery-faq/delivery-faq.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { DeliveryProductosComponent } from './delivery-productos/delivery-produc
     ProductosListComponent,
     CarritoComprasComponent,
     DeliveryContactComponent,
-    DeliveryProductosComponent
+    DeliveryProductosComponent,
+    DeliveryAboutComponent,
+    DeliveryAzulenioComponent,
+    DeliveryFaqComponent
   ],
   imports: [
     BrowserModule,
