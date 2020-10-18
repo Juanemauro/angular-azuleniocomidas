@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { DeliveryProductosComponent } from './delivery-productos/delivery-productos.component';
-
-import { DeliveryContactComponent } from './delivery-contact/delivery-contact.component';
 import { DeliveryAboutComponent } from './delivery-about/delivery-about.component';
+import { DeliveryFaqComponent } from './delivery-faq/delivery-faq.component';
 
 const routes: Routes = [
   {
@@ -16,12 +14,15 @@ const routes: Routes = [
   {
     path: 'productos',
     component: DeliveryProductosComponent
-  },
-  
+  },  
   {
     path: 'about',
     component: DeliveryAboutComponent
-  }
+  },
+  {
+    path: 'faq',
+    component: DeliveryFaqComponent
+  },  
 ];
 
 @NgModule({

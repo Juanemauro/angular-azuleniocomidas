@@ -21,7 +21,7 @@ import { DeliveryFaqComponent } from './delivery-faq/delivery-faq.component';
     DeliveryProductosComponent,
     DeliveryAboutComponent,
     DeliveryAzulenioComponent,
-    DeliveryFaqComponent
+    DeliveryFaqComponent,
   ],
   imports: [
     BrowserModule,
