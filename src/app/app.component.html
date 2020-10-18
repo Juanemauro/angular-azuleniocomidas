@@ -37,10 +37,10 @@
         <div class="col-md-3 mb-md-0 mb-3">
             <h5 class="text-uppercase">SECCIONES</h5>
             <ul class="list-unstyled">
-            <li><a href="showHome">Home</a></li>
-            <li><a href="Pedidos">Pedidos</a></li>
-            <li><a href="Productos">Productos</a></li>
-            <li><a href="showFaq">FAQ</a></li>          
+            <li><a [routerLink]="['home']">HOME</a></li>            
+            <li><a [routerLink]="['/productos']">PRODUCTOS</a></li>
+            <li><a [routerLink]="['/about']">ABOUT</a></li>
+            <li><a [routerLink]="['/faq']">FAQ</a></li>          
             </ul>
         </div>
         <div class="col-md-3 mb-md-0 mb-3">
