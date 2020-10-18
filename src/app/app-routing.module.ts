@@ -3,14 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { DeliveryProductosComponent } from './delivery-productos/delivery-productos.component';
 import { DeliveryAboutComponent } from './delivery-about/delivery-about.component';
 import { DeliveryFaqComponent } from './delivery-faq/delivery-faq.component';
+import { DeliveryHomeComponent } from './delivery-home/delivery-home.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'productos', //agregar componente Home
+    redirectTo: 'home', 
     pathMatch: 'full'
   },
- 
+  {
+    path: 'home',
+    component: DeliveryHomeComponent
+  },  
   {
     path: 'productos',
     component: DeliveryProductosComponent

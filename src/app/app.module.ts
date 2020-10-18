@@ -11,6 +11,7 @@ import { DeliveryProductosComponent } from './delivery-productos/delivery-produc
 import { DeliveryAboutComponent } from './delivery-about/delivery-about.component';
 import { DeliveryAzulenioComponent } from './delivery-azulenio/delivery-azulenio.component';
 import { DeliveryFaqComponent } from './delivery-faq/delivery-faq.component';
+import { DeliveryHomeComponent } from './delivery-home/delivery-home.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DeliveryFaqComponent } from './delivery-faq/delivery-faq.component';
     DeliveryAboutComponent,
     DeliveryAzulenioComponent,
     DeliveryFaqComponent,
+    DeliveryHomeComponent,
   ],
   imports: [
     BrowserModule,
