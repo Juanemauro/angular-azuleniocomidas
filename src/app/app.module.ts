@@ -12,6 +12,7 @@ import { DeliveryAboutComponent } from './delivery-about/delivery-about.componen
 import { DeliveryAzulenioComponent } from './delivery-azulenio/delivery-azulenio.component';
 import { DeliveryFaqComponent } from './delivery-faq/delivery-faq.component';
 import { DeliveryHomeComponent } from './delivery-home/delivery-home.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DeliveryHomeComponent } from './delivery-home/delivery-home.component';
     DeliveryAzulenioComponent,
     DeliveryFaqComponent,
     DeliveryHomeComponent,
+    InputIntegerComponent,
   ],
   imports: [
     BrowserModule,

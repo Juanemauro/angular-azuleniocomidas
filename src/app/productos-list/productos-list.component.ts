@@ -16,7 +16,7 @@ export class ProductosListComponent implements OnInit {
             stock: 5,
             image: 'assets/img/pizza.jpeg',
             clearance: false,
-            quantity: 5,
+            quantity: 0,
           },
           {
             name: 'Don Cripriano',
@@ -42,24 +42,10 @@ export class ProductosListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  //Aumentar cantidad de un producto
-  upQuantity(producto: Producto): void{
-    if (producto.quantity < producto.stock)
-      producto.quantity++;     
-  }
-  //Disminuir cantidad de un producto
-  downQuantity(producto: Producto): void{
-    if(producto.quantity > 0)
-      producto.quantity--;
-  }
-  changeQuantity({ event, producto }: { event; producto: Producto; }) : void{
-    if (event.target.value > producto.stock){
-      producto.quantity = producto.stock;
-    }
-    if (event.target.value < 0){
-      event.target.value = event.target.value*(-1);
-      producto.quantity = event.target.value;
-    } 
+
+  maxCantidad(mensaje:string){
+    //console.log(mensaje);
+    alert(mensaje);
   }
 
 }
