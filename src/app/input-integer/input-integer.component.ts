@@ -55,7 +55,7 @@ export class InputIntegerComponent implements OnInit {
       event.target.value = 0;
       this.quantity = event.target.value;
     }
-    this.quantityChange.emit(event.target.value);
+    this.quantityChange.emit(parseInt(event.target.value));
      
   }
 
