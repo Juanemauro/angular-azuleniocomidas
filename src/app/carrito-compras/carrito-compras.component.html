@@ -1,5 +1,5 @@
-<h3>Carrito de compras</h3>
-<table class="table">
+<h3>Tu compra</h3>
+<table class="table" *ngIf="(cartList$ | async)?.length > 0"> 
     <thead>
         <tr>
             <th>Producto</th>
@@ -9,10 +9,10 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>{{producto.nombre}}</td>
-            <td>{{producto.cantidad}}</td>
-            <td>{{producto.precio}}</td>           
+        <tr *ngFor="let producto of (cartList$ | async)">
+            <td>{{producto.name}}</td>
+            <td>{{producto.quantity}}</td>
+            <td>{{producto.price}}</td>           
         </tr>
     </tbody>
 </table>

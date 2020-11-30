@@ -6,6 +6,7 @@
             <th>Nombre</th>
             <th>Descripción</th>
             <th>Precio</th>
+            <th>Cantidad</th>
             <th>Compra</th>
         </tr>
     </thead>
@@ -16,8 +17,12 @@
             <td>{{producto.description}}</td>
             <td>{{producto.price | currency}}<span class="badge badge-warning" *ngIf="producto.stock == 0">SIN STOCK</span></td>
             <td class="quantity">
-                <app-input-integer [(quantity)]="producto.quantity" [max]="producto.stock" *ngIf="producto.stock" (maxCantidad)="maxCantidad($event)"></app-input-integer> 
-            </td>         
+                <app-input-integer [(quantity)]="producto.quantity" [max]="producto.stock" *ngIf="producto.stock" (maxCantidad)="maxCantidad($event)"></app-input-integer>
+                
+            </td> 
+            <td>
+                <button type="button" class="btn btn-success" (click)="addToCart(producto)">Comprar</button> 
+            </td>        
         </tr>
     </tbody>
 </table>

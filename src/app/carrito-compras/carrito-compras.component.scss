@@ -1,5 +1,5 @@
-.img{
-    width: 100%;
+.home2{
+	width: 10%;
 }
 h1{
     color: grey;
@@ -11,27 +11,39 @@ table{
 	width: 100%;
 }
 
+.quantity{
+	width: 150px;
+}
 /*th, td{
-	padding: 20px;
+	padding: 5px;
 }*/
 
 thead{
-	background-color:darkolivegreen;
+	background-color: #246355;
 	border-bottom: solid 5px #0F362D;
 	color: white;
 }
 
-tr:nth-child(even){
+/*tr:nth-child(even){
 	background-color: #ddd;
-}
+}*/
 
 tr:hover td{
-	background-color: olivedrab;
+	background-color: #369681;
 	color: white;
 }
 
 .tick{
     width: 20px;
+}
+
+.clearance{
+	border: 5px solid orangered;
+	background-color: lightsalmon;
+}
+
+input {
+    max-width: 40px;
 }
 
 th, td{

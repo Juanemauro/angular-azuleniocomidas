@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductCartService } from '../product-cart.service';
 import { Producto } from './Producto';
 
 
@@ -36,9 +37,10 @@ export class ProductosListComponent implements OnInit {
             clearance: false,
             quantity:0,
           } 
-  ] 
-   
-  constructor() { }
+  ]; 
+     
+  constructor(private cart: ProductCartService) {     
+  }
 
   ngOnInit(): void {
   }
@@ -46,6 +48,12 @@ export class ProductosListComponent implements OnInit {
   maxCantidad(mensaje:string){
     //console.log(mensaje);
     alert(mensaje);
+  }
+
+  addToCart(producto):void{
+    this.cart.addToCart(producto);
+    producto.stock -= producto.quantity; //cambio stock
+    producto.quantity = 0; //reinicio para la siguiente compra
   }
 
 }
